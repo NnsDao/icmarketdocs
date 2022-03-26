@@ -1,0 +1,113 @@
+---
+sidebar_position: 1
+---
+
+# Welcome to icmarket 👀🎉
+
+ICmarket - DAO-based subDAO marketplace.
+
+ICmarket is a 「diversified」 「tradable」platform for NFTs, which provides user-directed creation and collaboration. It also provides subDAO to join and create the common collections and collaborative NFTs.
+
+<!--truncate-->
+
+import Link from '@docusaurus/Link';
+import GridLink from '@site/src/components/GridLink';
+import GetStartedCard from '@site/src/components/GetStartedCard';
+import {
+  DeviceTabletIcon,
+  CodeIcon,
+  QuestionMarkCircleIcon,
+} from '@heroicons/react/solid';
+import {
+  Discord as DiscordIcon,
+  Github as GithubIcon,
+} from '@styled-icons/boxicons-logos';
+import {
+  ReactIcon,
+  FlutterIcon,
+  JSIcon,
+  AndroidIcon,
+  AppleIcon,
+  SDKIcon,
+  APIIcon,
+  ReactRevolveIcon,
+  KotlinIcon,
+  SwiftIcon,
+  ReactNativeIcon,
+} from '@site/src/assets/icons';
+import { HashChange } from '@site/src/components/HashChange';
+
+<!-- Hack for highlighting menu links with anchor tags -->
+
+<HashChange
+  onLoad={() => {
+    const topLink = document.querySelector(
+      'a.menu__link[href="/docs/home/introduction"]'
+    );
+    if (topLink) {
+      topLink.onclick = (e) => {
+        document
+          .querySelectorAll('a.menu__link')
+          ?.forEach((link) => link?.classList.remove('menu__link--active'));
+        e.target.classList.add('menu__link--active');
+      };
+    }
+  }}
+  onChange={() => {
+    const { hash } = window.location;
+    if (hash < 2) return;
+    document
+      .querySelectorAll('a.menu__link')
+      ?.forEach((link) => link.classList.remove('menu__link--active'));
+    let link =
+      document.querySelector(`a.menu__link[href="${hash}"]`) ??
+      document.querySelector('a.menu__link[href="/docs/home/introduction"]');
+    link?.classList.add('menu__link--active');
+  }}
+/>
+
+Working with Icmarket will require an integration with your application server as well as the participant-facing client (mobile or web) app where you want to deliver the video.
+
+:::tip Jump to quickstart
+
+Keep reading to know more about how Icmarket works, or [**click here to jump to our quickstart guides**](#quickstart) that get you started.
+
+:::
+
+## How icmarket works
+
+![Diagram explaining how Icmarket works](/how-to-work.png)
+
+## How to guide
+
+<div className="grid xl:grid-cols-6 gap-4">
+
+<GridLink
+  to="/guide/quickstart"
+  className="py-4 xl:col-span-2"
+  title="Getting Started"
+  subtitle="End to end tutorials on getting started from scratch on specific use cases."
+/>
+
+<GridLink
+  to="/guide/quickstart"
+  className="py-4 xl:col-span-2"
+  title="Buying NFTs"
+  subtitle="Complete reference to our client SDKs for various client platforms."
+/>
+
+<GridLink
+  to="/guide/"
+  className="py-4 xl:col-span-2"
+  title="Selling NFTs"
+  subtitle="Complete reference to our HTTP APIs that you can use to interact with the Dyte platform."
+/>
+
+<GridLink
+  to="/faq/"
+  className="py-4 xl:col-span-2"
+  title="FAQs"
+  subtitle="Complete reference to our HTTP APIs that you can use to interact with the Dyte platform."
+/>
+
+</div>
