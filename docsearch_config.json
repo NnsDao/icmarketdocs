@@ -1,47 +1,17 @@
 {
   "index_name": "prod_docs",
-  "sitemap_urls": ["https://docs.dyte.io/sitemap.xml"],
+  "sitemap_urls": ["https://docs.icmarket.app/sitemap.xml"],
   "start_urls": [
     {
-      "url": "https://docs.dyte.io/docs/home/introduction",
+      "url": "https://docs.icmarket.app/docs/home/introduction",
       "tags": ["introduction"]
     },
     {
-      "url": "https://docs.dyte.io/guides/subscribing-to-server-events",
+      "url": "https://docs.icmarket.app/guides/install-wallet-icmarket",
       "selectors_key": "guides",
       "tags": ["guides"]
     },
-    {
-      "url": "https://docs.dyte.io/react/",
-      "selectors_key": "react",
-      "tags": ["react"]
-    },
-    {
-      "url": "https://docs.dyte.io/react-native/",
-      "selectors_key": "react-native",
-      "tags": ["react-native"]
-    },
-    {
-      "url": "https://docs.dyte.io/javascript/",
-      "selectors_key": "javascript",
-      "tags": ["javascript"]
-    },
-    {
-      "url": "https://docs.dyte.io/flutter/",
-      "selectors_key": "flutter",
-      "tags": ["flutter"]
-    },
-    {
-      "url": "http://docs.dyte.io/android/",
-      "selectors_key": "android",
-      "tags": ["android"]
-    },
-    {
-      "url": "https://docs.dyte.io/ios/",
-      "selectors_key": "ios",
-      "tags": ["ios"]
-    },
-    "https://docs.dyte.io/docs/"
+    "https://docs.icmarket.app/docs/"
   ],
   "stop_urls": [],
   "selectors": {

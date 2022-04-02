@@ -27,7 +27,26 @@ module.exports = {
     {
       type: 'category',
       label: 'Product Integration Guides',
-      items: ['subscribing-to-server-events'],
+      items: ['install-wallet-icmarket', 'connect-your-wallet', 'buy-ndp-icp'],
+    },
+    {
+      type: 'category',
+      label: 'Buying NFTs',
+      items: ['buy-fixed-price-nfts'],
+    },
+    {
+      type: 'category',
+      label: 'Selling NFTs',
+      items: [
+        'selling-nfts',
+        'update-reserve-price',
+        'how-to-cancel-your-listing',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'FAQs',
+      items: ['faq-icmarket', 'glossary'],
     },
   ],
 };

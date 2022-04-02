@@ -15,7 +15,6 @@ import Translate from '@docusaurus/Translate';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import { MenuIcon } from '@heroicons/react/outline';
 import ThemeSwitcher from '@site/src/components/ThemeSwitcher';
-import { Github } from '@styled-icons/boxicons-logos';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import useThemeContext from '@theme/hooks/useThemeContext';
 import useWindowSize from '@theme/hooks/useWindowSize';
@@ -177,11 +176,11 @@ function NavbarMobileSidebar({ sidebarShown, toggleSidebar }) {
                 Community
               </Link>
             </li>
-            <li className="menu__list-item">
+            {/* <li className="menu__list-item">
               <Link href="https://github.com/dyte-in" className="menu__link">
                 GitHub
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -211,24 +210,15 @@ const getPage = () => {
   const [, doc] = window.location.pathname.split('/');
 
   switch (doc) {
-    case 'api':
+    case 'buying':
       return 'api';
     case 'docs':
       return 'home';
     case 'guides':
       return 'guides';
     default:
-      if (
-        [
-          'react',
-          'react-native',
-          'flutter',
-          'javascript',
-          'android',
-          'ios',
-        ].includes(doc)
-      ) {
-        return 'sdk';
+      if (['react', 'Typescript'].includes(doc)) {
+        return 'api';
       }
       return null;
   }
@@ -267,7 +257,7 @@ function Navbar() {
 
           <div className="hidden space-x-6 text-text-100 lg:flex">
             <Link
-              to="/guides/subscribing-to-server-events"
+              to="/guides/install-wallet-icmarket"
               className={clsx(
                 'text-sm font-medium hover:no-underline',
                 page === 'guides' ? 'text-primary-100' : 'text-text-100'
@@ -277,12 +267,42 @@ function Navbar() {
             </Link>
 
             <Link
+              to="/guides/buy-fixed-price-nfts"
+              className={clsx(
+                'text-sm font-medium hover:no-underline',
+                page === 'buying' ? 'text-primary-100' : 'text-text-100'
+              )}
+            >
+              Buy NFTs
+            </Link>
+
+            <Link
+              to="/guides/selling-nfts"
+              className={clsx(
+                'text-sm font-medium hover:no-underline',
+                page === 'selling' ? 'text-primary-100' : 'text-text-100'
+              )}
+            >
+              Sell NFTs
+            </Link>
+
+            <Link
+              to="/guides/faq-icmarket"
+              className={clsx(
+                'text-sm font-medium hover:no-underline',
+                page === 'faqs' ? 'text-primary-100' : 'text-text-100'
+              )}
+            >
+              FAQs
+            </Link>
+
+            {/* <Link
               className="flex items-center text-sm font-medium text-text-100 hover:no-underline"
               href="https://github.com/nnsdao"
             >
               <Github className="mr-1 h-5" aria-hidden={true} />
               GitHub
-            </Link>
+            </Link> */}
           </div>
         </div>
 

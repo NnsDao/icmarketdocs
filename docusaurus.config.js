@@ -46,7 +46,15 @@ module.exports = {
         },
         {
           label: 'Guides',
-          to: '/guides/subscribing-to-server-events',
+          to: '/guides/install-wallet-icmarket',
+        },
+        {
+          label: 'Buying',
+          to: '/guides/buy-fixed-price-nfts',
+        },
+        {
+          label: 'Selling',
+          to: '/selling/selling-nfts',
         },
       ],
     },
@@ -93,7 +101,7 @@ module.exports = {
     tailwindPlugin,
     webpackPlugin,
     posthogPlugin,
-
+    require.resolve('docusaurus-lunr-search'),
     [
       '@docusaurus/plugin-content-docs',
       {

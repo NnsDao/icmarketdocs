@@ -1,5 +1,5 @@
 import Link from '@docusaurus/Link';
-import { Github, Twitter } from '@styled-icons/boxicons-logos';
+import { Twitter } from '@styled-icons/boxicons-logos';
 import React from 'react';
 import IcmarketLogo from '../../static/icmarket.png';
 
@@ -32,12 +32,12 @@ export default function Footer() {
               >
                 <Twitter className="h-8" />
               </Link>
-              <Link
+              {/* <Link
                 href="https://github.com/NnsDao/ICMarket"
                 className="inline-flex text-current transition hover:text-primary"
               >
                 <Github className="h-8" />
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="mt-12 grid flex-1 grid-cols-2 gap-8 md:grid-cols-2 lg:mt-0 lg:grid-cols-3">
@@ -50,19 +50,6 @@ export default function Footer() {
                     className="text-current hover:no-underline"
                   >
                     ICmarket
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-2">
-              <div className="text-sm font-normal text-text-100">Company</div>
-              <ul className="list-none space-y-2 p-0 text-sm">
-                <li>
-                  <Link
-                    href="https://nnsdao.org"
-                    className="text-current hover:no-underline"
-                  >
-                    About Us
                   </Link>
                 </li>
               </ul>

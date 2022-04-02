@@ -1,48 +1,17 @@
-import React, { useState, useEffect, Fragment, memo } from 'react';
-import clsx from 'clsx';
 import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
-import { useHistory } from 'react-router-dom';
 import { useAllDocsData } from '@theme/hooks/useDocs';
-import {
-  ReactIcon,
-  FlutterIcon,
-  JSIcon,
-  AndroidIcon,
-  AppleIcon,
-} from '../assets/icons';
+import clsx from 'clsx';
 import { string } from 'prop-types';
+import React, { Fragment, memo, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { ReactIcon } from '../assets/icons';
 
 const CONTEXTS = [
   {
     id: 'react',
     name: 'React',
     icon: ReactIcon,
-  },
-  {
-    id: 'javascript',
-    name: 'JavaScript',
-    icon: JSIcon,
-  },
-  {
-    id: 'react-native',
-    name: 'React Native',
-    icon: ReactIcon,
-  },
-  {
-    id: 'android',
-    name: 'Android',
-    icon: AndroidIcon,
-  },
-  {
-    id: 'ios',
-    name: 'iOS',
-    icon: AppleIcon,
-  },
-  {
-    id: 'flutter',
-    name: 'Flutter',
-    icon: FlutterIcon,
   },
 ];
 

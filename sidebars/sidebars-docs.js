@@ -23,8 +23,28 @@ module.exports = {
       items: [
         {
           type: 'link',
-          label: 'Subscribing to server events',
-          href: '/guides/subscribing-to-server-events',
+          label: 'install to wallet icmarket',
+          href: '/guides/install-wallet-icmarket',
+        },
+        {
+          type: 'link',
+          label: 'connect stoic wallet',
+          href: '/guides/connect-your-wallet',
+        },
+        {
+          type: 'link',
+          label: 'Buy ICP NDP',
+          href: '/guides/buy-ndp-icp',
+        },
+        {
+          type: 'link',
+          label: 'FAQs',
+          href: '/guides/faq-icmarket',
+        },
+        {
+          type: 'link',
+          label: 'Glossary',
+          href: '/guides/glossary',
         },
       ],
     },
