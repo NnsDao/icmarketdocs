@@ -48,5 +48,16 @@ module.exports = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Developers',
+      items: [
+        {
+          type: 'link',
+          label: 'Developers manual',
+          href: '/guides/dev/dev-manual',
+        },
+      ],
+    },
   ],
 };

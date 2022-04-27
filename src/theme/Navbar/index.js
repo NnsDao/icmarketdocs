@@ -287,6 +287,16 @@ function Navbar() {
             </Link>
 
             <Link
+              to="/guides/dev/dev-manual"
+              className={clsx(
+                'text-sm font-medium hover:no-underline',
+                page === 'guides' ? 'text-primary-100' : 'text-text-100'
+              )}
+            >
+              Developers
+            </Link>
+
+            <Link
               to="/guides/faq-icmarket"
               className={clsx(
                 'text-sm font-medium hover:no-underline',

@@ -56,6 +56,10 @@ module.exports = {
           label: 'Selling',
           to: '/selling/selling-nfts',
         },
+        {
+          label: 'Developers',
+          to: '/guides/dev/dev-manual',
+        },
       ],
     },
     hideableSidebar: true,
